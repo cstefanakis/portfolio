@@ -40,7 +40,9 @@ export default {
 
 <template>
     <div class="contact-form">
-      <h2>Contact Me</h2>
+
+      <div class = "title">Contact Me</div>
+
       <form @submit.prevent="sendEmail">
         <input v-model="name" type="text" placeholder="Your Name" required />
         <input v-model="email" type="email" placeholder="Your Email" required />

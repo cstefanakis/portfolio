@@ -22,7 +22,8 @@ export default defineComponent({
 
 <template>
   <div class="skill-list">
-    <h2>Skills</h2>
+    
+    <div class = "title">Skills</div>
     
     <div class="cards-container">
     <div v-for="(skill, index) in skills" :key="index">
@@ -41,8 +42,8 @@ export default defineComponent({
 </template>
 
 <style scoped>
+
 .skill-list {
-    
   padding: 20px;
 }
 

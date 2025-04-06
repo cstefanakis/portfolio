@@ -22,7 +22,8 @@ export default defineComponent({
 
 <template>
   <div class="workExperience-list">
-    <h2>Work experience</h2>
+
+    <h3 class = "title">Work experience</h3>
 
       <div v-for="(work, index) in workExperience" :key="index">
         <strong>{{ work.position }}</strong>

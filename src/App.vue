@@ -2,12 +2,14 @@
 import { defineComponent } from 'vue';
 import SidebarLeft from '@/components/SidebarLeft.vue';
 import MainContent from '@/components/MainContent.vue';
+import TopNavbar from '@/components/TopNavbar.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
     SidebarLeft,
-    MainContent
+    MainContent,
+    TopNavbar
   }
 });
 </script>
@@ -15,12 +17,21 @@ export default defineComponent({
 <template>
   <div class="app-container">
     <div class="top"></div>
+    
+    <aside class="dmenu">
+       <TopNavbar />
+    </aside>
+
     <aside class="sidebar">
       <SidebarLeft />
     </aside>
+    
     <main class="content">
       <MainContent />
     </main>
+
+    
+    
   </div>
 </template>
 
@@ -31,12 +42,12 @@ export default defineComponent({
   overflow: hidden;
 }
 .app-container {
-  width: 1200px;
+  width: 1300px;
+  float: left;
   margin: 0 auto;
 }
 
 .sidebar {
-  max-width: 350px;
   padding: 30px;
   border-radius: 30px;
   border: 1px solid #565656;
@@ -47,9 +58,24 @@ export default defineComponent({
   z-index: 10;
 }
 
+.dmenu {
+  flex-direction: column;
+  border-radius: 100px;
+  border: 1px solid #565656;
+  position:fixed;
+  right: 68px;
+  text-align: center;
+  gap: 20px;
+  padding :20px 0;
+  background: #1f1f1f;
+  z-index: 20;
+  width:55px;
+}
+
 .content {
   margin-left: auto;
   max-width: 770px;
   background-color: #1f1f1f;
 }
+
 </style>

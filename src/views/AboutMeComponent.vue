@@ -22,7 +22,8 @@ export default defineComponent({
 
 <template>
   <div class="aboutMe-list">
-    <h2>About Me</h2>
+    
+    <div class ="title">About Me</div>
     
         <h2> Hi i am {{ aboutMe.name }}</h2>
         <p>{{ aboutMe.profession }}</p>

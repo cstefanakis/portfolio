@@ -28,7 +28,8 @@ export default defineComponent({
 
 <template>
   <div class="education-list">
-    <h2>Education</h2>
+
+    <div class = "title">Education</div>
     
       <div v-for="(edu, index) in education" :key="index">
         <div class = "timeline">

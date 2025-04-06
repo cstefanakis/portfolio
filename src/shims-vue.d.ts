@@ -4,3 +4,9 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+
+// Add this part to handle SVG imports
+declare module "*.svg" {
+  const content: string;
+  export default content;
+}
