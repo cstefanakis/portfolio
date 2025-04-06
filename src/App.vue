@@ -1,30 +1,55 @@
+<script lang="ts">
+import { defineComponent } from 'vue';
+import SidebarLeft from '@/components/SidebarLeft.vue';
+import MainContent from '@/components/MainContent.vue';
+
+export default defineComponent({
+  name: 'App',
+  components: {
+    SidebarLeft,
+    MainContent
+  }
+});
+</script>
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="app-container">
+    <div class="top"></div>
+    <aside class="sidebar">
+      <SidebarLeft />
+    </aside>
+    <main class="content">
+      <MainContent />
+    </main>
+  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style scoped>
+.top {
+  padding: 68px;
+  position:relative;
+  overflow: hidden;
+}
+.app-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-nav {
+.sidebar {
+  max-width: 350px;
   padding: 30px;
+  border-radius: 30px;
+  border: 1px solid #565656;
+  position:fixed;
+  left: 20px;
+  top:50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.content {
+  margin-left: auto;
+  max-width: 770px;
+  background-color: #1f1f1f;
 }
 </style>

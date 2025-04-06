@@ -1,0 +1,92 @@
+[ 
+    {
+        "category":"Frontend Development",
+        "technologies":[
+            {
+                "name":"Html",
+                "description":"",
+                "icon":"https://img.icons8.com/?size=96&id=20909&format=png"
+            },
+            {
+                "name":"Css",
+                "description":"",
+                "icon":"https://img.icons8.com/?size=96&id=21278&format=png"
+            },
+            {
+                "name":"Vue.js",
+                "description":"",
+                "icon":"https://img.icons8.com/?size=96&id=rY6agKizO9eb&format=png"
+            }
+        ]
+    },
+    {
+        "category":"Backend Development",
+        "technologies": [
+            {
+                "name":"Java",
+                "description":"",
+                "icon":"https://img.icons8.com/?size=96&id=13679&format=png"
+            },
+            {
+                "name":"Rest Api",
+                "description":"",
+                "icon":"https://img.icons8.com/?size=96&id=MjLQiLrhFlNy&format=png"
+            },
+            {
+                "name":"Spring Boot",
+                "description":"",
+                "icon":"https://img.icons8.com/?size=96&id=90519&format=png"
+            },
+            {
+                "name":"Thymeleaf",
+                "description":"",
+                "icon":"https://img.icons8.com/?size=96&id=iWpVsSkAqPpZ&format=png"
+            },
+            {
+                "name":"JWT",
+                "description":"",
+                "icon":"https://img.icons8.com/?size=96&id=rHpveptSuwDz&format=png"
+            }
+        ]
+    },
+    {
+        "category":"Database and ORM",
+        "technologies": [
+            {
+                "name":"Sql",
+                "description":"",
+                "icon":"https://img.icons8.com/?size=96&id=J6KcaRLsTgpZ&format=png"
+            },
+            {
+                "name":"Jpa",
+                "description":"",
+                "icon":"https://img.icons8.com/?size=100&id=8305&format=png"
+            },
+            {
+                "name":"MySql",
+                "description":"",
+                "icon":"https://img.icons8.com/?size=160&id=rgPSE6nAB766&format=png"
+            }
+        ]
+    },
+    {
+        "category":"Testing",
+        "technologies":[
+            {
+                "name":"Junit",
+                "description":"",
+                "icon":""
+            }
+        ]
+    },
+    {
+        "category": "Version Control and Collaboration:",
+        "technologies": [
+            {
+                "name": "Git",
+                "description": "Version Control: committing, pushing, pulling, creating requests, and team collaboration.",
+                "icon": "https://img.icons8.com/?size=96&id=AZOZNnY73haj&format=png"
+            }
+        ]
+    }
+]

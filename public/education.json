@@ -1,0 +1,36 @@
+[
+    {
+      "school": "SDA (Software Development Academy)",
+      "diploma": "Java Developer",
+      "year": "2024 – 2025 Scope: 300 hours / 12 Months",
+      "description": [
+        "<b>Version Control:</b> Git (committing, pushing, pulling, creating requests, and team collaboration).",
+        "<b>Programming Basics:</b> Variables, loops, methods, constructors, lists, dates, exceptions, collections, and annotations.",
+        "<b>Object-Oriented Programming (OOP):</b> Inheritance, composition, polymorphism, encapsulation, abstraction, interfaces, enumerations, and object manipulation.",
+        "<b>REST API & JSON:</b> Understanding and working with APIs and data exchange formats.",
+        "<b>Testing:</b> Writing and executing unit tests.",
+        "<b>Databases & ORM:</b> SQL, JDBC, and Hibernate.",
+        "<b>Spring Boot & Security:</b> Application development with Spring Boot, security concepts, and Thymeleaf for templating.",
+        "<b>Frontend Development:</b> HTML, CSS, Vue.js (including Axios), and basic Node.js concepts."]
+  
+      },
+    {
+      "school": "I.E.K. (Institute of Vocational Training)",
+      "diploma": "Network Engineer and web developer",
+      "year": "2003 - 2006",
+      "description":[
+        "Installation and configuration of computers, networks.",
+        "Web sites building and multimedia applications."
+      ]
+    },
+    {
+      "school": "T.E.E. (Technical Vocational Institute)",
+      "diploma": "Support of operating systems and networks.",
+      "year": "2000 - 2003",
+      "description":[
+        "Computer Engineer (hardware, software).",
+        "Installations of operating systems and programs.",
+        "Networks support and information systems."
+      ]
+    }
+  ]

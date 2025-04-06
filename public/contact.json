@@ -1,0 +1,29 @@
+[
+    {
+        "name": "phone",
+        "value": "+420 739 737 538",
+        "icon": "https://img.icons8.com/?size=96&id=AZOZNnY73haj&format=png" 
+    },
+    {
+        "name": "email",
+        "value": "christosste86@gmail.com",
+        "icon": "https://img.icons8.com/?size=100&id=2848&format=png" 
+    },
+    {
+        "name": "location",
+        "value": "Czech Republic, Brno",
+        "icon": "https://img.icons8.com/?size=100&id=7880&format=png" 
+    },
+    {
+        "name": "github",
+        "value": "https://github.com/cstefanakis",
+        "icon-green": "https://img.icons8.com/?size=128&id=48708&format=png",
+        "icon-gray" : "https://img.icons8.com/?size=128&id=48708&format=png"
+    },
+    {
+        "name": "linkedin",
+        "value": "https://www.linkedin.com/in/christos-stefanakis-74199543/",
+        "icon-green": "https://img.icons8.com/?size=100&id=60443&format=png",
+        "icon-gray" : "https://img.icons8.com/?size=100&id=60443&format=png"
+    }
+]

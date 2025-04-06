@@ -1,0 +1,60 @@
+[
+    {
+        "position": "Team Leader, at Tesco Stores s.r.o",
+        "year": "2012 - 2023",
+        "location": "District Brno-City, Czech Republic",
+        "description": [
+            "Led a team of 12 employees, fostering a collaborative and productive work environment.",
+            "Developed and managed employee schedules to ensure optimal coverage and efficient operations.",
+            "Provided comprehensive training to team members, enhancing their skills and performance.",
+            "Maintained high standards of customer service, resolving issues and ensuring customer satisfaction.",
+            "Monitored team performance and implemented strategies to improve efficiency and effectiveness.",
+            "Coordinated with other departments to streamline operations and achieve organizational goals.",
+            "Conducted regular team meetings to communicate updates, provide feedback, and motivate staff."
+        ]
+    },
+    {
+        "position": "Computer support and Team leader at \"Stadium\" - entertainment center",
+        "year": "2008 - 2011",
+        "location": "66 Karaoli & Dimitriou str., 562 24 Thessaloniki - Evosmos, Greece",
+        "description": [
+            "Team Leadership: Supervised a team of 9 employees, providing guidance, support and training to ensure high performance and professional growth.",
+            "Scheduling: Planned and managed work schedules, ensuring optimal coverage and efficient use of resources to meet operational demands.",
+            "Order Management: Coordinated and placed orders for necessary supplies and equipment, maintaining inventory levels and ensuring timely replenishment.",
+            "Customer Service: Delivered exceptional customer service, addressing and resolving customer inquiries and issues promptly to ensure satisfaction.",
+            "Technical Support: Performed computer repairs and troubleshooting, resolving technical issues and ensuring the smooth operation of IT systems.",
+            "Process Improvement: Identified and implemented process improvements to enhance team efficiency and service quality."
+        ]
+    },
+    {
+        "position": "Driver at Greek Army",
+        "year": "2007 - 2008",
+        "location": "Kaválla, Eastern Macedonia and Thrace, Greece",
+        "description": [
+            "I served as a driver while also inspecting goods during their receipt and dispatch to the barracks."
+        ]
+    },
+    {
+        "position": "System Administrator at \"College\" - internet cafe",
+        "year": "2006 - 2007",
+        "location": "48 Gevgelis str., 561 21 Thessaloniki - Ampelokipoi, Greece",
+        "description": [
+            "Customer Service: Providing excellent customer service, addressing inquiries, and resolving issues promptly.",
+            "System Monitoring: Keeping track of computer usage, monitoring for any unusual activity, and ensuring the smooth operation of all systems.",
+            "User Management: Creating and managing user accounts, ensuring appropriate access levels, and maintaining user databases.",
+            "Financial Transactions: Handling payments, managing cash flow, and maintaining accurate records of transactions.",
+            "Inventory Management: Keeping track of hardware and software inventory, ordering supplies as needed."
+        ]
+    },
+    {
+        "position": "School practice at Altec s.a.",
+        "year": "2006",
+        "location": "Michail Kalou 6, 546 29 Thessaloniki, Greece",
+        "description": [
+            "Installation of computer units and their configuration.",
+            "Connecting devices to the network.",
+            "Troubleshooting peripheral components."
+        ]
+    }
+
+]
