@@ -11,12 +11,85 @@ body{
   h1 { font-size: 26px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
   h2 { font-size: 22px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
   h3 { font-size: 16px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
-  p {  font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; }
+  p {  font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; line-height: 25px; color : #b9b6b6;}
   
-  .title {
-    border: 1px solid #565656;
-    border-radius: 30px;
-    padding: 5px;
-    padding: 9px 20px;
-    transform: translate(0px, 0px);
-  }
+
+.title {
+  border: 1px solid #565656;
+  border-radius: 30px;
+  padding: 5px;
+  padding: 9px 20px;
+  transform: translate(0px, 0px);
+}
+
+.timeline {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 20px;
+  border-left: 2px solid #565656;
+  transition: border-color 0.3s ease;
+}
+  
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  width: 14px;
+  height: 14px;
+  background-color: #565656;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+  
+.timeline:hover {
+  border-left-color: #00FF84;
+}
+  
+.timeline:hover::before {
+  background-color: #00FF84;
+}
+  
+.timeline:hover .period {
+  color: #00FF84;
+}
+
+.timeline:hover .company {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.timeline:hover .description {
+  color: #e7e7e7;
+}
+  
+.company {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e7e7e7;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+  
+.description {
+  font-size: 14px;
+  color: #bdbdbd;
+  margin-top: 5px;
+}
+
+.period {
+  font-size: 14px;
+  color: #6e6e6e;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.article-content {
+  padding: 20px;;
+}
+
+.title-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  fill: white;
+}

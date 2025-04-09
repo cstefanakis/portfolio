@@ -1,22 +1,43 @@
 <script lang="ts">
 import { defineComponent, ref, onMounted } from 'vue';
 
+interface Contact {
+  name: string;
+  value: string;
+  icon?: string;
+  'icon-green'?: string;
+  'icon-gray'?: string;
+}
+
 export default defineComponent({
   name: 'AboutMeComponent',
 
   setup() {
-    const contacts = ref<Record<string, any>>({});
-
+    const contacts = ref<Contact[]>([]); // Change to an array of Contact
+    const aboutMe = ref<Record<string, any>>({});
+    
     onMounted(async () => {
       try {
-        const response = await fetch('/contact.json');
-        contacts.value = await response.json();
+        const responseContact = await fetch('/contact.json');
+        const responseAboutMe = await fetch('/aboutMe.json');
+        contacts.value = await responseContact.json();
+        aboutMe.value = await responseAboutMe.json();
       } catch (error) {
         console.error("Error loading contact data", error);
       }
     });
 
-    return { contacts };
+    const getEmail = () => {
+      const emailContact = Object.values(contacts.value).find(contact => contact.name === 'email');
+      return emailContact ? emailContact : '';
+    };
+
+    const getLocation = () => {
+      const locationContact = Object.values(contacts.value).find(contact => contact.name === 'location');
+      return locationContact ? locationContact : '';
+    };
+
+    return { contacts, aboutMe, getEmail, getLocation };
   },
 
   methods: {
@@ -24,7 +45,6 @@ export default defineComponent({
       window.open(url, '_blank');
     }
   }
-  
 });
 </script>
 
@@ -35,17 +55,16 @@ export default defineComponent({
           Christos Stefanakis
         </div>
 
-        <div class="title">
-          Junior Java Developer
-        </div>
+        <div class="work-title" >{{ aboutMe.profession }}</div>
       </div>
       <div class = "image-container">
           <img class="profile" src="https://media.licdn.com/dms/image/v2/C5603AQFvqJrOwHKD-Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1566722058827?e=1748476800&v=beta&t=_hzQYcwHD8BsXNSb1zYJMLaJn8QlsovDino7NuUd0JQ" alt="profile picture">
       </div>
       
       <div class = "contact-container">
-          <div class = "email">christos.stefanakis@outlook.com</div>
-          <div class = "location">Based in Brno</div>
+          <div class = "email">{{getEmail().value}}</div>
+          <div class = "location">Based in
+            {{ getLocation().value }}</div>
       </div>
 
 
@@ -79,32 +98,37 @@ export default defineComponent({
 
 .title-container{
   display: flex;
-  margin-top:10px;
-  display: flex;
-  
+  margin:20px;  
 }
 
-.title{
-  width: 40%;
-  font-size: 20px;
+.work-title{
+  width: 30%;
+  font-size: 17px;
   color: #fff;
-  text-align: center;
-  font-weight: 300;
+  text-align: left;
+  border: 1px solid #565656;
+  border-radius: 10px;
+  background-color: #2e2c2c;
+  padding : 5px;
+  float:right;
+
 }
 
 .name{
   width:60%;
   font-size: 30px;
   color: #fff;
-  text-align: center;
-  font-weight: 300;
+  text-align: left;
+  font-weight: bold;
+  float: left;
 }
 
 .profile {
-    width: 255px;
+    width: 260px;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .image-container, .social-container {
@@ -117,7 +141,7 @@ export default defineComponent({
 }
 
 .email, .location{
-  font-size: 22px;
+  font-size: 18px;
   color: #fff;
   text-align: center;
   padding: 5px;

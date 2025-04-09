@@ -16,7 +16,7 @@ export default defineComponent({
 
 <template>
   <div class="app-container">
-    <div class="top"></div>
+    
     
     <aside class="dmenu">
        <TopNavbar />
@@ -26,7 +26,7 @@ export default defineComponent({
       <SidebarLeft />
     </aside>
     
-    <main class="content">
+    <main class="main-content">
       <MainContent />
     </main>
 
@@ -36,23 +36,21 @@ export default defineComponent({
 </template>
 
 <style scoped>
-.top {
-  padding: 68px;
-  position:relative;
-  overflow: hidden;
-}
+
 .app-container {
-  width: 1300px;
+  width: 1120px;
   float: left;
   margin: 0 auto;
 }
 
 .sidebar {
-  padding: 30px;
+  
   border-radius: 30px;
   border: 1px solid #565656;
   position:fixed;
   left: 20px;
+  width: 300px;
+  height: 80vh;
   top:50%;
   transform: translateY(-50%);
   z-index: 10;
@@ -70,12 +68,15 @@ export default defineComponent({
   background: #1f1f1f;
   z-index: 20;
   width:55px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.content {
+.main-content {
   margin-left: auto;
   max-width: 770px;
   background-color: #1f1f1f;
+  margin-top: 40px;
 }
 
 </style>

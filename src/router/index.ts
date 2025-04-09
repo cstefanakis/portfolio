@@ -4,10 +4,16 @@ import EducationComponent from '@/views/EducationComponent.vue'
 import WorkExperienceComponent from '@/views/WorkExperienceComponent.vue'
 import SkillsComponent from '@/views/SkillsComponent.vue'
 import ContactComponent from '@/views/ContactComponent.vue'
+import HomeComponent from '@/views/HomeComponent.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
+    name: 'home',
+    component: HomeComponent
+  },
+  {
+    path: '/about-me',
     name: 'about-me',
     component: AboutMeComponent
   },
