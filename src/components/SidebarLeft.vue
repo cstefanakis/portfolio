@@ -23,7 +23,7 @@ export default defineComponent({
         contacts.value = await responseContact.json();
         aboutMe.value = await responseAboutMe.json();
       } catch (error) {
-        console.error("Error loading contact data", error);
+        console.error("Error loading data", error);
       }
     });
 
@@ -51,14 +51,12 @@ export default defineComponent({
 <template>
     
       <div class = "title-container">
-        <div class="name">
-          Christos Stefanakis
-        </div>
+        <div class="name">{{ aboutMe.name }}</div>
 
         <div class="work-title" >{{ aboutMe.profession }}</div>
       </div>
       <div class = "image-container">
-          <img class="profile" src="https://media.licdn.com/dms/image/v2/C5603AQFvqJrOwHKD-Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1566722058827?e=1748476800&v=beta&t=_hzQYcwHD8BsXNSb1zYJMLaJn8QlsovDino7NuUd0JQ" alt="profile picture">
+          <img class="profile" :src="aboutMe.profile" alt="profile picture">
       </div>
       
       <div class = "contact-container">
@@ -98,7 +96,8 @@ export default defineComponent({
 
 .title-container{
   display: flex;
-  margin:20px;  
+  margin:20px;
+  justify-content: space-between;  
 }
 
 .work-title{
@@ -110,8 +109,8 @@ export default defineComponent({
   border-radius: 10px;
   background-color: #2e2c2c;
   padding : 5px;
-  float:right;
-
+  display: flex;
+  align-items: center;
 }
 
 .name{
@@ -120,7 +119,7 @@ export default defineComponent({
   color: #fff;
   text-align: left;
   font-weight: bold;
-  float: left;
+  align-items: center;
 }
 
 .profile {
@@ -129,6 +128,7 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .image-container, .social-container {

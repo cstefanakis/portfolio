@@ -17,16 +17,14 @@ export default defineComponent({
 <template>
   <div class="app-container">
     
-    
-    <aside class="dmenu">
-       <TopNavbar />
-    </aside>
-
     <aside class="sidebar">
       <SidebarLeft />
     </aside>
-    
+
     <main class="main-content">
+      <aside class="dmenu">
+       <TopNavbar />
+      </aside>
       <MainContent />
     </main>
 
@@ -37,46 +35,65 @@ export default defineComponent({
 
 <style scoped>
 
-.app-container {
-  width: 1120px;
-  float: left;
-  margin: 0 auto;
-}
+  .app-container {
+    max-width: 760px;
+    float: left;
+    margin-left: 330px;
+    
+  }
 
-.sidebar {
-  
-  border-radius: 30px;
-  border: 1px solid #565656;
-  position:fixed;
-  left: 20px;
-  width: 300px;
-  height: 80vh;
-  top:50%;
-  transform: translateY(-50%);
-  z-index: 10;
-}
+  .sidebar {
+    
+    border-radius: 30px;
+    border: 1px solid #565656;
+    position:fixed;
+    left: 20px;
+    width: 315px;
+    height: 85vh;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
 
-.dmenu {
-  flex-direction: column;
-  border-radius: 100px;
-  border: 1px solid #565656;
-  position:fixed;
-  right: 68px;
-  text-align: center;
-  gap: 20px;
-  padding :20px 0;
-  background: #1f1f1f;
-  z-index: 20;
-  width:55px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  .dmenu {
+    flex-direction: column;
+    border-radius: 100px;
+    border: 1px solid #565656;
+    position:fixed;
+    right: 68px;
+    text-align: center;
+    gap: 20px;
+    padding :20px 0;
+    background: #1f1f1f;
+    z-index: 20;
+    width:55px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-.main-content {
-  margin-left: auto;
-  max-width: 770px;
-  background-color: #1f1f1f;
-  margin-top: 40px;
-}
+  .main-content {
+    margin-left: auto;
+    max-width: 770px;
+    background-color: #1f1f1f;
+    margin-top: 40px;
+  }
 
+@media screen and (max-width: 1250px) {
+  .dmenu {
+    all: unset;
+  }
+}
+@media screen and (max-width: 980px) {
+  .dmenu {
+    all: unset;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  .app-container {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
 </style>

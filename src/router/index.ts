@@ -24,17 +24,17 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/work-experience',
-    name: 'WorkExperience',
+    name: 'workExperience',
     component: WorkExperienceComponent
   },
   {
     path: '/skills',
-    name: 'Skills',
+    name: 'skills',
     component: SkillsComponent
   },
   {
     path: '/contact',
-    name: 'Contact',
+    name: 'contact',
     component: ContactComponent
   }
 ]
