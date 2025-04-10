@@ -1,10 +1,19 @@
 <script lang="ts">
 import { defineComponent, ref, onMounted } from 'vue';
 
+interface AboutMe {
+  name: string;
+  proffession: string;
+  attack: string;
+  description: string;
+  profile : string;
+}
+
 export default defineComponent({
   name: 'AboutMeComponent',
+  
   setup() {
-    const aboutMe = ref<Record<string, any>>({});
+    const aboutMe = ref<AboutMe>({ attack: '', description: '', name: '', proffession: '', profile: '' });
 
     onMounted(async () => {
       try {

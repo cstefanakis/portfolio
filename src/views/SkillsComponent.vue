@@ -2,17 +2,37 @@
 import { defineComponent, ref, onMounted } from 'vue';
 
 // Define a type for the language object
-interface Language {
+interface language {
   name: string;
   level: string;
+}
+
+interface technologie {
+  category: string;
+  technologies: {
+    name: string;
+    icon: string;
+  }[];
+}
+
+interface application {
+  category: string;
+  applications: {
+    name: string;
+    icon: string;
+    applications?: {
+      name: string;
+      icon: string;
+    }[];
+  }[];
 }
 
 export default defineComponent({
   name: 'SkillsComponent',
   setup() {
-    const technologies = ref<any[]>([]);  
-    const languages = ref<Language[]>([]);
-    const applications = ref<any[]>([]);
+    const technologies = ref<technologie[]>([]);  
+    const languages = ref<language[]>([]);
+    const applications = ref<application[]>([]);
 
     onMounted(async () => {
       try {

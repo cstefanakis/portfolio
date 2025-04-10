@@ -10,11 +10,16 @@
   "dependencies": {
     "axios": "^1.8.4",
     "core-js": "^3.8.3",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nodemailer": "^6.10.0",
     "vue": "^3.5.13",
     "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.14.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",
@@ -27,11 +32,25 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "file-loader": "^6.2.0",
+    "ts-node": "^10.9.2",
     "typescript": "~4.5.5",
     "vite-plugin-svg-loader": "^1.0.0",
     "vue-loader": "^15.11.1",
     "vue-svg-loader": "^0.16.0",
     "webpack": "^5.98.0",
     "webpack-cli": "^4.0.0"
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cstefanakis/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cstefanakis/portfolio/issues"
+  },
+  "homepage": "https://github.com/cstefanakis/portfolio#readme"
 }

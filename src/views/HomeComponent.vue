@@ -16,11 +16,9 @@
 
 <style scoped>
 .hi, .first-name {
-    
     font-size: 100px;
     font-weight: bold;
     text-align: left;
-    margin-top: 20px;
 }
 
 .first-name {

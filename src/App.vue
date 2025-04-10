@@ -36,7 +36,7 @@ export default defineComponent({
 <style scoped>
 
   .app-container {
-    max-width: 760px;
+    max-width: 800px;
     float: left;
     margin-left: 330px;
     
@@ -73,7 +73,7 @@ export default defineComponent({
 
   .main-content {
     margin-left: auto;
-    max-width: 770px;
+    width: 770px;
     background-color: #1f1f1f;
     margin-top: 40px;
   }
@@ -81,6 +81,10 @@ export default defineComponent({
 @media screen and (max-width: 1250px) {
   .dmenu {
     all: unset;
+  }
+  .main-content {
+    max-width: 770px;
+    width: auto;
   }
 }
 @media screen and (max-width: 980px) {
