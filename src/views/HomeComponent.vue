@@ -15,7 +15,7 @@
 </template>
 
 <style scoped>
-.hi {
+.hi, .first-name {
     
     font-size: 100px;
     font-weight: bold;
@@ -25,10 +25,12 @@
 
 .first-name {
     color: #2CE98D;
-    font-size: 100px;
-    font-weight: bold;
-    text-align: left;
-    margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .hi, .first-name {
+        font-size: 75px;
+    }
 }
 </style>
 

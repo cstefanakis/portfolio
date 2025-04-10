@@ -8,4 +8,7 @@ module.exports = {
       .use('vue-svg-loader')
       .loader('vue-svg-loader');
   },
+  devServer: {
+    host: '0.0.0.0'
+  }
 };

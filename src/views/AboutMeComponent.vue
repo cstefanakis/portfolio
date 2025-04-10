@@ -53,4 +53,10 @@ export default defineComponent({
   font-weight: bold;
 }
 
+@media screen and (max-width: 700px) {
+  .attack{
+    font-size: 40px;
+  }
+}
+
 </style>
