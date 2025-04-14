@@ -16,17 +16,17 @@ body{
 
 .title {
   border: 1px solid #565656;
-  border-radius: 30px;
-  padding: 5px;
-  padding: 9px 20px;
-  transform: translate(0px, 0px);
-  margin-bottom: 20px;
-  width: 100%;
+  border-radius: 10px;
+  padding: 7px;
+  margin-bottom: 15px;
 }
 
 .timeline {
   position: relative;
-  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
   padding-left: 20px;
   border-left: 2px solid #565656;
   transition: border-color 0.3s ease;
@@ -86,7 +86,11 @@ body{
 }
 
 .article-content {
-  padding: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;;
+  margin-top: 20px;
+  display: inline-block;
 }
 
 .title-icon {
@@ -100,9 +104,9 @@ li{
   padding-bottom: 5px;;
 }
 
-button {
+button ,.contact-me{
   background-color: #00FF84;
-  color: #2e2c2c;
+  color: black;
   border: 1px solid #2e2c2c;
   padding: 10px 20px;
   text-align: center;
@@ -113,22 +117,47 @@ button {
   border-radius: 10px;
 }
 
-button:hover {
+button:hover, .contact-me:hover {
   background-color:  #3d3a3a;
   border: 1px solid #00FF84;
-  color: white;
+  color:  #00FF84;
+}
+
+.box-container {
+  border: 1px solid #565656;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #2e2c2c;
 }
 
 @media screen and (max-width: 1250px) {
+  .article-content {
+    margin-top: 125px;
+  }
+
   .title {
     display: none;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 980px) {
+  .article-content {
+    margin-top: 126px;
+    
+  }
+}
+
+@media screen and (max-width: 810px) {
+
+  .article-content {
+    margin-top: 100px;
+  }
+
   .title {
     display:flex;
+    
   }
+
   ul {
     padding-left: 5px;
   }
@@ -138,4 +167,11 @@ button:hover {
 
   }
 
+}
+
+@media screen and (max-width: 570px) {
+  .article-content {
+    margin-top: 82px;
+  }
+  
 }

@@ -21,7 +21,7 @@ export default defineComponent({
       <SidebarLeft />
     </aside>
 
-    <main class="main-content">
+    <main>
       <aside class="dmenu">
        <TopNavbar />
       </aside>
@@ -44,12 +44,12 @@ export default defineComponent({
 
   .sidebar {
     
-    border-radius: 30px;
+    border-radius: 20px;
     border: 1px solid #565656;
     position:fixed;
     left: 20px;
     width: 315px;
-    height: 85vh;
+    height: 95vh;
     top:50%;
     transform: translateY(-50%);
     z-index: 10;
@@ -71,33 +71,21 @@ export default defineComponent({
     transform: translateY(-50%);
   }
 
-  .main-content {
-    margin-left: auto;
-    width: 770px;
-    background-color: #1f1f1f;
-    margin-top: 40px;
-  }
 
 @media screen and (max-width: 1250px) {
   .dmenu {
     all: unset;
   }
-  .main-content {
-    max-width: 770px;
-    width: auto;
-  }
 }
 @media screen and (max-width: 980px) {
-  .dmenu {
-    all: unset;
-  }
+
   .sidebar {
     display: none;
   }
 
   .app-container {
     margin-left: 0;
-    max-width: 100%;
   }
 }
+
 </style>

@@ -27,7 +27,7 @@
 
 @media screen and (max-width: 700px) {
     .hi, .first-name {
-        font-size: 75px;
+        font-size: 65px;
     }
 }
 </style>

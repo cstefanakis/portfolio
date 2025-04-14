@@ -8,14 +8,11 @@ export default defineComponent({
 </script>
 
 <template>
-  <main class="content">
+  <main>
     <RouterView />
   </main>
 </template>
 
 <style scoped>
 
-.content {
-  background-color: #1f1f1f;
-}
 </style>

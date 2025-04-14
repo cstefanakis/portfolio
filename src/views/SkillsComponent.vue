@@ -71,15 +71,11 @@ export default defineComponent({
   <div class="article-content">
     
     <div class = "title">
-      <span>
-
         <svg class ="title-icon" xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 100.000000 100.000000" preserveAspectRatio="xMidYMid meet">
           <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)" stroke="none">
             <path d="M408 917 c-144 -54 -228 -167 -228 -305 0 -94 22 -150 90 -227 62 -70 90 -133 90 -200 0 -87 124 -145 211 -100 38 20 69 71 69 114 0 61 23 113 76 170 73 79 96 130 102 221 3 60 0 86 -18 133 -26 70 -95 143 -165 176 -61 29 -173 38 -227 18z m198 -83 c54 -26 110 -87 128 -141 35 -102 12 -188 -75 -280 -27 -29 -57 -69 -65 -88 -9 -23 -21 -35 -34 -35 -19 0 -20 7 -20 126 l0 125 29 25 c36 30 50 80 28 101 -21 21 -50 9 -64 -27 -8 -21 -18 -30 -33 -30 -15 0 -25 9 -33 30 -14 36 -43 48 -64 27 -22 -21 -8 -71 28 -101 l29 -25 0 -125 c0 -125 0 -126 -23 -126 -17 0 -26 9 -36 35 -7 19 -34 59 -62 89 -84 92 -108 180 -75 274 50 140 210 209 342 146z m-36 -639 c0 -25 -38 -55 -70 -55 -32 0 -70 30 -70 55 0 12 14 15 70 15 56 0 70 -3 70 -15z"/>
           </g>
         </svg>
-
-      </span>
       Skills
     </div>
 
@@ -120,12 +116,12 @@ export default defineComponent({
       <h3>{{ application.category }}</h3>
       <div class="skills-container">
         <div v-for="(desc, i) in application.applications" :key="i">
-          <div style="display: flex;">
+          <div class = "collection">
             <div class="skill-item">
               <img :src="desc.icon" alt="Application Icon" class="icons">
               <p>{{ desc.name }}</p>
 
-            </div>
+            
             
             <div v-if="desc.applications && desc.applications.length > 0" class="subcategory">
               <div v-for="(app, i) in desc.applications" :key="i">
@@ -135,7 +131,7 @@ export default defineComponent({
                 </div>
               </div>
             </div>
-
+          </div>
           </div>
             
         </div>
@@ -151,16 +147,7 @@ export default defineComponent({
 .container {
     display: flex;
     flex-wrap: wrap;
-    
-}
-
-.box-container {
-    border: 1px solid #565656;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
-    padding: 15px;
-    background-color: #2e2c2c;
+    gap: 16px;
 }
 
 ul {
@@ -184,6 +171,10 @@ p{
     margin-right: 10px;
 }
 
+.collection {
+    display: flex;
+}
+
 .subcategory {
     display: flex;
     background-color: #3d3a3a;
@@ -196,6 +187,7 @@ p{
     gap: 10px;
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
 }
 
 .skill-item {
@@ -207,5 +199,20 @@ p{
 
 .icons {
     height: 40px;
+}
+
+@media screen and (max-width: 810px) {
+
+  .icons {
+    height: 30px;
+  }
+
+}
+
+@media screen and (max-width: 570px) {
+  .container{
+    flex-direction: column;
+  }
+  
 }
 </style>

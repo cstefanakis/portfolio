@@ -5,6 +5,8 @@ import WorkExperienceComponent from '@/views/WorkExperienceComponent.vue'
 import SkillsComponent from '@/views/SkillsComponent.vue'
 import ContactComponent from '@/views/ContactComponent.vue'
 import HomeComponent from '@/views/HomeComponent.vue'
+import ProjectComponent from '@/views/ProjectComponent.vue'
+import ProjectDetailsComponent from '@/views/ProjectDetailsComponent.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -33,9 +35,20 @@ const routes: Array<RouteRecordRaw> = [
     component: SkillsComponent
   },
   {
+    path: '/projects',
+    name: 'projects',
+    component: ProjectComponent
+  },
+  {
     path: '/contact',
     name: 'contact',
     component: ContactComponent
+  },
+  { 
+    path: '/projects/:id', 
+    name: 'ProjectDetail', 
+    component: ProjectDetailsComponent, 
+    props: true 
   }
 ]
 

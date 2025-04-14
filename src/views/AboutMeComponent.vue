@@ -56,7 +56,7 @@ export default defineComponent({
 
 
 .attack{
-  margin-top:30px;
+  margin-top:0px;
   margin-bottom:30px;
   font-size: 60px;
   font-weight: bold;

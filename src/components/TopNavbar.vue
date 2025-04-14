@@ -23,6 +23,7 @@ export default defineComponent({
       workExperienceBatton : false,
       skillsBatton : false,
       contactBatton : false,
+      projectBatton : false,
     };
   },
   methods: {
@@ -33,6 +34,7 @@ export default defineComponent({
       this.workExperienceBatton = false;
       this.skillsBatton = false;
       this.contactBatton = false;
+      this.projectBatton = false;
       this[selected] = true;
     }
   },
@@ -89,15 +91,28 @@ export default defineComponent({
           </svg>
           <span class="tooltip">Skills</span>
         </router-link>
-      
-        <router-link to="/contact" @click="toggleClass('contactBatton')" :class="{ 'active': contactBatton, 'menu-item': !contactBatton }">
-        <svg :class="{ 'activeIcons': contactBatton, 'icons': !contactBatton }" viewBox="0 0 128.000000 128.000000" preserveAspectRatio="xMidYMid meet">
-          <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)" stroke="none">
-          <path d="M58 1074 c-57 -30 -58 -40 -58 -434 0 -396 1 -405 60 -435 44 -23 1116 -23 1160 0 59 30 60 39 60 435 0 396 -1 405 -60 435 -43 22 -1121 22 -1162 -1z m842 -309 c-135 -135 -252 -245 -260 -245 -8 0 -125 110 -260 245 l-245 245 505 0 505 0 -245 -245z m-663 -282 l-157 -158 0 315 0 315 157 -158 158 -157 -158 -157z m963 155 l0 -313 -157 157 -158 158 155 155 c85 85 156 155 157 155 2 0 3 -141 3 -312z m-695 -109 c58 -59 92 -79 135 -79 43 0 66 14 133 78 l57 57 155 -155 c85 -85 155 -158 155 -162 0 -5 -225 -8 -500 -8 -275 0 -500 3 -500 7 0 9 302 313 310 313 3 0 28 -23 55 -51z"/>
+        
+        <router-link to="/projects" @click="toggleClass('projectBatton')" :class="{ 'active': projectBatton, 'menu-item': !projectBatton }">
+          <svg :class="{ 'activeIcons': projectBatton, 'icons': !projectBatton }" xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 96.000000 96.000000" preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)" stroke="none">
+            <path d="M114 786 l-34 -34 0 -286 c0 -315 3 -332 58 -355 16 -7 49 -11 73 -9 l44 3 0 275 0 275 -54 5 c-76 8 -106 55 -61 100 19 19 33 20 358 20 250 0 341 -3 350 -12 18 -18 17 -541 -1 -557 -9 -7 -103 -12 -278 -13 -227 -3 -264 -5 -264 -18 0 -13 38 -15 273 -18 l273 -2 24 24 25 25 0 281 0 281 -25 24 -24 25 -352 0 -351 0 -34 -34z m75 -166 l31 0 0 -240 0 -240 -30 0 c-17 0 -39 9 -50 20 -19 19 -20 33 -20 250 0 225 0 230 19 220 11 -5 33 -10 50 -10z"/>
+            <path d="M645 650 c-12 -19 6 -30 48 -30 l42 0 -67 -67 -68 -68 -60 60 -60 60 -72 -72 c-57 -58 -70 -75 -60 -85 10 -10 25 0 72 47 l60 59 60 -59 60 -59 79 78 80 79 3 -44 c2 -31 7 -44 18 -44 12 0 15 15 15 75 l0 75 -72 3 c-42 2 -74 -1 -78 -8z"/>
+            <path d="M345 329 c-16 -25 20 -29 231 -27 187 3 219 5 219 18 0 13 -33 15 -222 18 -154 2 -224 -1 -228 -9z"/>
           </g>
-        </svg>
-        <span class="tooltip">Contact</span>
+            </svg>
+        <span class="tooltip">Projects</span>
         </router-link>
+      
+        <div class ="contact">
+          <router-link to="/contact" @click="toggleClass('contactBatton')" :class="{ 'active': contactBatton, 'menu-item': !contactBatton }">
+          <svg :class="{ 'activeIcons': contactBatton, 'icons': !contactBatton }" viewBox="0 0 128.000000 128.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)" stroke="none">
+            <path d="M58 1074 c-57 -30 -58 -40 -58 -434 0 -396 1 -405 60 -435 44 -23 1116 -23 1160 0 59 30 60 39 60 435 0 396 -1 405 -60 435 -43 22 -1121 22 -1162 -1z m842 -309 c-135 -135 -252 -245 -260 -245 -8 0 -125 110 -260 245 l-245 245 505 0 505 0 -245 -245z m-663 -282 l-157 -158 0 315 0 315 157 -158 158 -157 -158 -157z m963 155 l0 -313 -157 157 -158 158 155 155 c85 85 156 155 157 155 2 0 3 -141 3 -312z m-695 -109 c58 -59 92 -79 135 -79 43 0 66 14 133 78 l57 57 155 -155 c85 -85 155 -158 155 -162 0 -5 -225 -8 -500 -8 -275 0 -500 3 -500 7 0 9 302 313 310 313 3 0 28 -23 55 -51z"/>
+            </g>
+          </svg>
+          <span class="tooltip">Contact</span>
+          </router-link>
+        </div>
       
 
   </nav>
@@ -132,6 +147,10 @@ export default defineComponent({
   
 }
 
+.contact{
+  display: none;
+}
+
 .tooltip {
   position: absolute;
   right: 55px; /* Adjust the distance from the icon */
@@ -141,7 +160,6 @@ export default defineComponent({
   clip-path: polygon(0% 0%, 83% 0, 83% 23%, 100% 45%, 81% 44%, 81% 75%, 0% 75%);
   color: #fff;
   padding: 5px 10px;
-
   display: none;
   font-size: 14px;
   padding-right: 35px;
@@ -153,7 +171,15 @@ export default defineComponent({
 @media screen and (max-width: 1250px) {
   .navbar {
     display: flex;
-    margin-left: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    position: fixed;
+    top: 0px;
+    background-color: #1f1f1f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1000;
+    width: 100%;
   }
 
   .tooltip {
@@ -214,16 +240,22 @@ export default defineComponent({
   }
 
 @media screen and (max-width: 980px) {
-  .menu-profile {
-    display:flex;
-    width: 85px;
-    height: 85px;
-    border-radius: 10px;;
-    margin-right: 10px;
-  }
+
+.contact {
+  display: flex;
 }
 
-  @media screen and (max-width: 700px) {
+.menu-profile {
+  display:flex;
+  width: 85px;
+  height: 85px;
+  border-radius: 10px;;
+  margin-right: 10px;
+}
+}
+
+  @media screen and (max-width: 810px) {
+
   .menu-profile {
     width: 60px;
     height: 60px;
@@ -234,6 +266,36 @@ export default defineComponent({
 
   .menu-item:hover .tooltip {
     display: none;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .navbar {
+    display: flex;
+
+    
+
+  }
+
+
+
+  .menu-item {
+    max-width: 25px;
+    padding: 2px 5px ;
+  }
+  .menu-profile{
+    width: 40px;
+    height: 40px;
+  }
+
+  .active {
+    width:18px;
+    height:30px;
+  }
+
+  .icons, .activeIcons {
+    width: 25px;
+    height: 25px;
   }
 }
 }
