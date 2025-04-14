@@ -130,6 +130,23 @@ button:hover, .contact-me:hover {
   background-color: #2e2c2c;
 }
 
+.skills-container {
+  gap: 10px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.icons {
+  height: 40px;
+}
+
 @media screen and (max-width: 1250px) {
   .article-content {
     margin-top: 125px;

@@ -183,23 +183,7 @@ p{
     border: 1px solid #565656;
 }
 
-.skills-container {
-    gap: 10px;
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-}
 
-.skill-item {
-  text-align: center;
-  padding-right: 5px;
-  padding-left: 5px;
-  
-}
-
-.icons {
-    height: 40px;
-}
 
 @media screen and (max-width: 810px) {
 
