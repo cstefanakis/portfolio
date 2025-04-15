@@ -50,6 +50,7 @@ const routes: Array<RouteRecordRaw> = [
     component: ProjectDetailsComponent, 
     props: true 
   }
+
 ]
 
 const router = createRouter({
