@@ -2,6 +2,6 @@
     "name": "Christos Stefanakis",
     "profession": "Java Developer",
     "attack": "Into the Unknown: A New Challenge Begins",
-    "description": "<p>I am a Java developer eager to expand my knowledge and gain practical experience. I completed a one-year course in Java development, where I learned <b>object-oriented programming (OOP)</b>, <b>REST APIs</b>, databases <b>(SQL, JDBC, Hibernate)</b>, and <b>Spring Boot</b>, along with frontend technologies like <b>Vue.js</b>, <b>HTML</b> and <b>CSS</b>.</p><p>In addition to software development, I have experience with networking and hardware, including troubleshooting, configuration, and maintenance. I also have experience leading people, coordinating tasks, and ensuring team efficiency.</p><p>I enjoy working in a team, learning new technologies, and solving complex problems. My goal is to grow as a developer and contribute to impactful projects while continuously improving my skills.</p>",
+    "description": "<p>I am a Java developer with a solid understanding of Spring Boot, Hibernate, JDBC, and SQL. I have experience building REST APIs, applying object-oriented programming principles, and ensuring application security using JWT (JSON Web Tokens).",
     "profile" : "https://media.licdn.com/dms/image/v2/C5603AQFvqJrOwHKD-Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1566722058827?e=1748476800&v=beta&t=_hzQYcwHD8BsXNSb1zYJMLaJn8QlsovDino7NuUd0JQ"
   }
