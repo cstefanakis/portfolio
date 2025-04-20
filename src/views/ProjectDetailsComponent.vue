@@ -109,14 +109,14 @@
 }
 
 .video-box{
-    border: 1px solid white;
+    border: 1px solid #565656;
     border-radius: 10px;
     padding: 10px;
     background-color: #2e2c2c;
 }
 
 .video-box:hover{
-    border: 1px solid #565656;
+    border: 1px solid white;
 }
 
 .video-title{
