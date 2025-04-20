@@ -6,7 +6,7 @@
     name: 'ProjectDetailComponent',
     setup() {
         const route = useRoute();
-        const project = ref<any>(null);
+        const project = ref<any>();
         
   
       onMounted(async () => {
