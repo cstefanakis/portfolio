@@ -5,7 +5,37 @@
         "description": "This Enterprise Resource Planning (ERP) system is a comprehensive business management solution designed to streamline operations across various departments within an organization. Built with Java, this application provides a robust, scalable, and secure platform for managing business processes including inventory, sales, purchasing, accounting, human resources, and customer relationship management.",
         "github": "https://github.com/RomanGatek/erp-system",
         "img": "https://ai-techpark.com/wp-content/uploads/2022/07/Oracle-Recognized.jpg",
-   
+        "videos":[
+            {
+                "title":"Present",
+                "url":"https://www.youtube.com/watch?v=59SSSzbGBWY"
+            }
+
+        ],
+        "developers":[
+            {
+                "github" :"https://github.com/cstefanakis"
+            },
+            {
+                "github":"https://github.com/RomanGatek"
+            },
+            {
+                "github":"https://github.com/cooffeeRequired"
+            },
+            {
+                "github":"https://github.com/steve25"
+            },
+            {
+                "github":"https://github.com/0tiy"
+            },
+            {
+                "github":"https://github.com/rostja"
+            },
+            {
+                "github":"https://github.com/michal-30"
+            }
+        ],
+
         "technologies": [
             {
                 "category":"Backend Development",

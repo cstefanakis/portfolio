@@ -79,8 +79,11 @@ export default defineComponent({
 
 .box-container {
   width: 180px;
-  text-decoration: none;
-  
+  text-decoration: none; 
+}
+
+.box-container:hover {
+    border: 1px solid white;
 }
 
 .project-title-container {

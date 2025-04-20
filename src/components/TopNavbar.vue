@@ -36,8 +36,16 @@ export default defineComponent({
       this.contactBatton = false;
       this.projectBatton = false;
       this[selected] = true;
+    },
+  
+
+    sendEmail() {
+        const subject = encodeURIComponent("Hello Christos!");
+        const body = encodeURIComponent("Hi Christos,\n\nI wanted to get in touch with you regarding...");
+        const email = "christosste86@gmail.com";
+        window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+      }
     }
-  },
 });
 </script>
 
@@ -104,14 +112,14 @@ export default defineComponent({
         </router-link>
       
         <div class ="contact">
-          <router-link to="/contact" @click="toggleClass('contactBatton')" :class="{ 'active': contactBatton, 'menu-item': !contactBatton }">
+          <div @click="sendEmail()" :class="{ 'active': contactBatton, 'menu-item': !contactBatton }">
           <svg :class="{ 'activeIcons': contactBatton, 'icons': !contactBatton }" viewBox="0 0 128.000000 128.000000" preserveAspectRatio="xMidYMid meet">
             <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)" stroke="none">
             <path d="M58 1074 c-57 -30 -58 -40 -58 -434 0 -396 1 -405 60 -435 44 -23 1116 -23 1160 0 59 30 60 39 60 435 0 396 -1 405 -60 435 -43 22 -1121 22 -1162 -1z m842 -309 c-135 -135 -252 -245 -260 -245 -8 0 -125 110 -260 245 l-245 245 505 0 505 0 -245 -245z m-663 -282 l-157 -158 0 315 0 315 157 -158 158 -157 -158 -157z m963 155 l0 -313 -157 157 -158 158 155 155 c85 85 156 155 157 155 2 0 3 -141 3 -312z m-695 -109 c58 -59 92 -79 135 -79 43 0 66 14 133 78 l57 57 155 -155 c85 -85 155 -158 155 -162 0 -5 -225 -8 -500 -8 -275 0 -500 3 -500 7 0 9 302 313 310 313 3 0 28 -23 55 -51z"/>
             </g>
           </svg>
           <span class="tooltip">Contact</span>
-          </router-link>
+        </div>
         </div>
       
 
@@ -153,19 +161,16 @@ export default defineComponent({
 
 .tooltip {
   position: absolute;
-  right: 55px; /* Adjust the distance from the icon */
+  right: 55px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #333;
-  clip-path: polygon(0% 0%, 83% 0, 83% 23%, 100% 45%, 81% 44%, 81% 75%, 0% 75%);
-  color: #fff;
-  padding: 5px 10px;
+  color: #797979;
   display: none;
   font-size: 14px;
-  padding-right: 35px;
   height:30px;
   white-space: nowrap;
-  
+  border-bottom: 1px solid #797979;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1250px) {
