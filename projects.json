@@ -1,0 +1,107 @@
+[
+    {   
+        "id": 1,
+        "title": "Erp System + E-Shop",
+        "description": "This Enterprise Resource Planning (ERP) system is a comprehensive business management solution designed to streamline operations across various departments within an organization. Built with Java, this application provides a robust, scalable, and secure platform for managing business processes including inventory, sales, purchasing, accounting, human resources, and customer relationship management.",
+        "github": "https://github.com/RomanGatek/erp-system",
+        "img": "https://ai-techpark.com/wp-content/uploads/2022/07/Oracle-Recognized.jpg",
+        "videos":[
+            {
+                "title":"Present",
+                "url":"https://www.youtube.com/watch?v=59SSSzbGBWY"
+            }
+
+        ],
+        "developers":[
+            {
+                "github" :"https://github.com/cstefanakis"
+            },
+            {
+                "github":"https://github.com/RomanGatek"
+            },
+            {
+                "github":"https://github.com/cooffeeRequired"
+            },
+            {
+                "github":"https://github.com/steve25"
+            },
+            {
+                "github":"https://github.com/0tiy"
+            },
+            {
+                "github":"https://github.com/rostja"
+            },
+            {
+                "github":"https://github.com/michal-30"
+            }
+        ],
+
+        "technologies": [
+            {
+                "category":"Backend Development",
+                "technologies": [
+                    {
+                        "name":"Jpa",
+                        "icon":"https://img.icons8.com/?size=100&id=8305&format=png"
+                    },
+                    {
+                        "name":"MySql",
+                        "icon":"https://img.icons8.com/?size=160&id=rgPSE6nAB766&format=png"
+                    },
+                    {
+                        "name":"Java",
+                        "icon":"https://img.icons8.com/?size=96&id=13679&format=png"
+                    },
+                    {
+                        "name":"Spring Boot",
+                        "icon":"https://img.icons8.com/?size=96&id=90519&format=png"
+                    },
+                    {
+                        "name":"JWT",
+                        "icon":"https://img.icons8.com/?size=96&id=rHpveptSuwDz&format=png"
+                    },
+                    {
+                        "name":"Rest Api",
+                        "icon":"https://img.icons8.com/?size=96&id=MjLQiLrhFlNy&format=png"
+                    },
+                    {
+                        "name":"Junit",
+                        "icon":"https://www.automatetheplanet.com/wp-content/uploads/2023/04/jUnit_logo-220x220.png"
+                    },
+                    {
+                        "name":"Hibernate",
+                        "icon":"https://static-00.iconduck.com/assets.00/hibernate-icon-1965x2048-cl94vxbt.png"
+                    }
+
+                ]
+            },
+            {
+                "category":"Frontend Development",
+                "technologies": [
+                    
+                    {
+                        "name":"Vue.js",
+                        "link":"",
+                        "icon":"https://img.icons8.com/?size=96&id=rY6agKizO9eb&format=png"
+                    },
+                    {
+                        "name":"telwindCss",
+                        "link":"",
+                        "icon":"https://img.icons8.com/?size=96&id=CIAZz2CYc6Kc&format=png" 
+                    },
+                    {
+                        "name":"JavaScript",
+                        "link":"",
+                        "icon":"https://img.icons8.com/?size=96&id=108784&format=png"
+                    },
+                    {
+                        "name": "Vitest",
+                        "link": "https://vitest.dev/",
+                        "icon":"https://vitest.dev/logo.svg"
+                    }
+                    
+                ]
+            }
+        ]
+    }
+]
