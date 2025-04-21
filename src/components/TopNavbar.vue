@@ -7,7 +7,7 @@ export default defineComponent({
     const aboutMe = ref({});
       onMounted(async () => {
         try {
-          const responseAboutMe = await fetch('/aboutMe.json');
+          const responseAboutMe = await fetch('https://cstefanakis.github.io/portfolio/aboutMe.json');
           aboutMe.value = await responseAboutMe.json();
         } catch (error) {
           console.error("Error loading about me data", error);
