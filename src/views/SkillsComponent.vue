@@ -36,9 +36,9 @@ export default defineComponent({
 
     onMounted(async () => {
       try {
-        const responseTechnologies = await fetch('/technologies.json');
-        const responseLanguages = await fetch('/languages.json');
-        const responseApllications = await fetch('/applications.json');
+        const responseTechnologies = await fetch('https://cstefanakis.github.io/portfolio/technologies.json');
+        const responseLanguages = await fetch('https://cstefanakis.github.io/portfolio/languages.json');
+        const responseApllications = await fetch('https://cstefanakis.github.io/portfolio/applications.json');
         technologies.value = await responseTechnologies.json();
         languages.value = await responseLanguages.json();
         applications.value = await responseApllications.json();

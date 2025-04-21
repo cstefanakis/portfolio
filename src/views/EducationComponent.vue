@@ -8,7 +8,7 @@ export default defineComponent({
 
     onMounted(async () => {
       try {
-        const response = await fetch('/education.json');
+        const response = await fetch('https://cstefanakis.github.io/portfolio/education.json');
         education.value = await response.json();
       } catch (error) {
         console.error("Error loading education data", error);

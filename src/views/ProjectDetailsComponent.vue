@@ -11,7 +11,7 @@
   
       onMounted(async () => {
         try {
-          const response = await fetch('/projects.json');
+          const response = await fetch('https://cstefanakis.github.io/portfolio/projects.json');
           const projects = await response.json();
           project.value = projects.find((p: any) => p.id === parseInt(route.params.id as string));
         } catch (error) {

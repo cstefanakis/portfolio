@@ -8,7 +8,7 @@ export default defineComponent({
 
     onMounted(async () => {
       try {
-        const response = await fetch('/workExperience.json');
+        const response = await fetch('https://cstefanakis.github.io/portfolio/workExperience.json');
         workExperience.value = await response.json();
       } catch (error) {
         console.error("Error loading work experiences data", error);
