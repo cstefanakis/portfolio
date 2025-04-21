@@ -18,8 +18,8 @@ export default defineComponent({
     
     onMounted(async () => {
       try {
-        const responseContact = await fetch('/contact.json');
-        const responseAboutMe = await fetch('/aboutMe.json');
+        const responseContact = await fetch('https://cstefanakis.github.io/portfolio/contact.json');
+        const responseAboutMe = await fetch('https://cstefanakis.github.io/portfolio/aboutMe.json');
         contacts.value = await responseContact.json();
         aboutMe.value = await responseAboutMe.json();
       } catch (error) {
