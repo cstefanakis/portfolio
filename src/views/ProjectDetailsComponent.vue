@@ -94,6 +94,10 @@
 </template>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
+
 .container, .developer-container {
     display: flex;
     flex-wrap: wrap;
@@ -132,7 +136,6 @@
 }
 
 .developer{
-    text-decoration: none;
     color: white;
     border: 1px solid white;
     padding: 10px;

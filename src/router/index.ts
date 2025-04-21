@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import AboutMeComponent from '@/views/AboutMeComponent.vue'
 import EducationComponent from '@/views/EducationComponent.vue'
 import WorkExperienceComponent from '@/views/WorkExperienceComponent.vue'
@@ -8,7 +8,9 @@ import HomeComponent from '@/views/HomeComponent.vue'
 import ProjectComponent from '@/views/ProjectComponent.vue'
 import ProjectDetailsComponent from '@/views/ProjectDetailsComponent.vue'
 
-const routes: Array<RouteRecordRaw> = [
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes: [
   {
     path: '/',
     name: 'home',
@@ -52,10 +54,6 @@ const routes: Array<RouteRecordRaw> = [
   }
 
 ]
-
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
 })
 
 export default router
