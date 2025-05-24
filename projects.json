@@ -97,5 +97,76 @@
                 ]
             }
         ]
+    },
+     {   
+        "id": 2,
+        "title": "Media Portal",
+        "description": "<p>Media Portal is a powerful application designed for organizing and managing media files on your system. It automates the process of scanning directories to detect various types of media content such as videos, music, audiobooks, photos, and more. Using advanced tools like FFmpeg and external APIs, Media Portal extracts detailed metadata from these files — including file format, duration, resolution, codecs, and embedded tags — to help users efficiently catalog and browse their media collections.</p><p>Key features include:</p><ul><li>Automated File Scanning: Continuously scans specified folders to discover new or updated media files.</li><li>Media Recognition: Differentiates between various media types (movies, TV shows, music, audiobooks, photos) and applies appropriate processing.</li><li>Metadata Extraction: Utilizes FFmpeg for in-depth technical metadata and external APIs for enriching media information such as titles, genres, release dates, and contributor details.</li><li>Media Categorization: Organizes files into meaningful categories and collections based on metadata, making browsing and searching intuitive.</li><li>Extensibility: Supports integration with third-party APIs and plugins to enhance media recognition and metadata accuracy.</li></ul><p>By combining local file analysis and online data sources, Media Portal aims to provide a comprehensive media library experience, allowing users to quickly find, sort, and enjoy their media assets all in one place.</p>",
+        "github": "https://github.com/cstefanakis/media-porter",
+        "img": "https://img.freepik.com/premium-vector/film-library-with-collection-rare-classic-movies-available-viewing-luxury-movie-theater_507704-15578.jpg",
+        "videos":[],
+        "developers":[
+            {
+                "github" :"https://github.com/cstefanakis"
+            }
+        ],
+
+        "technologies": [
+            {
+                "category":"Backend Development",
+                "technologies": [
+                    {
+                        "name":"Jpa",
+                        "icon":"https://img.icons8.com/?size=100&id=8305&format=png"
+                    },
+                    {
+                        "name":"MySql",
+                        "icon":"https://img.icons8.com/?size=160&id=rgPSE6nAB766&format=png"
+                    },
+                    {
+                        "name":"Java",
+                        "icon":"https://img.icons8.com/?size=96&id=13679&format=png"
+                    },
+                    {
+                        "name":"Spring Boot",
+                        "icon":"https://img.icons8.com/?size=96&id=90519&format=png"
+                    },
+                    {
+                        "name":"JWT",
+                        "icon":"https://img.icons8.com/?size=96&id=rHpveptSuwDz&format=png"
+                    },
+                    {
+                        "name":"Rest Api",
+                        "icon":"https://img.icons8.com/?size=96&id=MjLQiLrhFlNy&format=png"
+                    },
+                    {
+                        "name":"Junit",
+                        "icon":"https://www.automatetheplanet.com/wp-content/uploads/2023/04/jUnit_logo-220x220.png"
+                    },
+                    {
+                        "name":"Hibernate",
+                        "icon":"https://static-00.iconduck.com/assets.00/hibernate-icon-1965x2048-cl94vxbt.png"
+                    }
+
+                ]
+            },
+            {
+                "category":"Frontend Development",
+                "technologies": [
+                    
+                    {
+                        "name":"Vue.js",
+                        "link":"",
+                        "icon":"https://img.icons8.com/?size=96&id=rY6agKizO9eb&format=png"
+                    },
+                    {
+                        "name":"JavaScript",
+                        "link":"",
+                        "icon":"https://img.icons8.com/?size=96&id=108784&format=png"
+                    }
+                    
+                ]
+            }
+        ]
     }
 ]
