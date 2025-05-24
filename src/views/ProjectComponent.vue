@@ -4,18 +4,18 @@ import { defineComponent, ref, onMounted } from 'vue';
 export default defineComponent({
   name: 'ProjectComponent',
   setup() {
-    const project = ref([]);
+    const projects = ref([]);
 
     onMounted(async () => {
       try {
-        const response = await fetch('https://cstefanakis.github.io/portfolio/projects.json');
-        project.value = await response.json();
+        const response = await fetch('https://cstefanakis.github.io/portfolio/projects.json');    
+        projects.value = await response.json();
       } catch (error) {
         console.error("Error loading education data", error);
       }
     });
 
-    return { project };
+    return { projects };
   },
 
   methods: {
@@ -46,7 +46,7 @@ export default defineComponent({
 
 
     <div class = "projects-container">
-        <router-link class="box-container" v-for="(project) in project" :key="project.id" :to="`/projects/${project.id}`">
+        <router-link class="box-container" v-for="project in projects" :key="project.id" :to="`/projects/${project.id}`">
 
         
             <div class = "project-title-container">
