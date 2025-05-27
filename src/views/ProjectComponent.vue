@@ -87,6 +87,10 @@ export default defineComponent({
     margin-top: 10px;;
 }
 
+.button {
+  padding : 5px 10px;
+}
+
 .box-container {
   width: 180px;
   text-decoration: none; 
