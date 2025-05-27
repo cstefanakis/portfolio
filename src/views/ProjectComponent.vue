@@ -87,7 +87,7 @@ export default defineComponent({
     margin-top: 10px;;
 }
 
-.button {
+button {
   padding : 5px 10px;
 }
 
