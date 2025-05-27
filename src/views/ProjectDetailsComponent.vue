@@ -40,8 +40,12 @@
       <h2>{{ project.title }}</h2>
       <img :src="project.img" :alt="project.title" class="detail-image" />
       <p v-html="project.description"></p>
-      <button @click="goToGithub(project.github)">GitHub</button>
-
+      <button @click="goToGithub(project.github.backend.url)">
+        GitHub <div style="font-size: 10px;">Backend</div>
+      </button>
+      <button @click="goToGithub(project.github.frontend.url)">
+        GitHub div style="font-size: 10px;">frontend/div>
+      </button>
         <div v-if = "project.developers">
             <h3>Developers</h3>
                 <div class="developer-container">
