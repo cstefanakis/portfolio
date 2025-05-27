@@ -147,10 +147,9 @@ button:hover, .contact-me:hover {
   height: 40px;
 }
 
-.guthubs {
+.githubs {
     display: flex;
     flex-direction: wrap;
-    gap: 10px;
 }
 
 @media screen and (max-width: 1250px) {

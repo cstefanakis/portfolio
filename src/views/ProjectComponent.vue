@@ -61,7 +61,7 @@ export default defineComponent({
                 <p v-html="project.description"></p>
             </div>
 
-            <div class ="githubs">
+            <div class="githubs">
               <div v-if="project.github.backend !== null">
                 <button @click="goToGithub(project.github.backend.url)">
                   GitHub <div style="font-size: 12px;">{{ project.github.backend.description }}</div>
@@ -88,11 +88,15 @@ export default defineComponent({
 }
 
 button {
-  padding : 5px 10px;
+  padding : 8px 18px;
+}
+
+.githubs {
+  gap: 9px;
 }
 
 .box-container {
-  width: 180px;
+  width: 192px;
   text-decoration: none; 
 }
 

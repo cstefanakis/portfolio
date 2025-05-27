@@ -41,7 +41,7 @@
       <img :src="project.img" :alt="project.title" class="detail-image" />
       <p v-html="project.description"></p>
 
-      <div class = "guthubs">
+      <div class = "githubs">
         <div v-if="project.github.backend != null">
           <button @click="goToGithub(project.github.backend.url)">
             GitHub <div style="font-size: 12px;">{{project.github?.backend?.description || "" }}</div>
@@ -122,6 +122,10 @@ a {
     padding-bottom: 10px;
     gap: 10px;
     
+}
+
+.githubs {
+    gap: 10px;
 }
 
 .video-box{
