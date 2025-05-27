@@ -149,7 +149,7 @@ button:hover, .contact-me:hover {
 
 .guthubs {
     display: flex;
-    flex-direction: column;
+    flex-direction: wrap;
     gap: 10px;
 }
 
