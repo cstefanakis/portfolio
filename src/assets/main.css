@@ -147,6 +147,12 @@ button:hover, .contact-me:hover {
   height: 40px;
 }
 
+.guthubs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 @media screen and (max-width: 1250px) {
   .article-content {
     margin-top: 125px;

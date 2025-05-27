@@ -61,14 +61,17 @@ export default defineComponent({
                 <p v-html="project.description"></p>
             </div>
 
-            <div>
+            <div class ="githubs">
               <div v-if="project.github.backend !== null">
-                <button @click="goToGithub(project.github.backend.url)">GitHub</button>
-                <div>{{ project.github.backend.description }}</div>
+                <button @click="goToGithub(project.github.backend.url)">
+                  GitHub <div style="font-size: 12px;">{{ project.github.backend.description }}</div>
+                </button>
               </div>
+
               <div v-if="project.github.frontend !== null">
-                <button @click="goToGithub(project.github.frontend.url)">GitHub</button>
-                <div>{{ project.github.frontend.description }}</div>
+                <button @click="goToGithub(project.github.frontend.url)">
+                  GitHub <div style="font-size: 12px;">{{ project.github.frontend.description }}</div>
+                </button>
               </div>
             </div>
         </router-link>
