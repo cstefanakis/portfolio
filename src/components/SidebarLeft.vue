@@ -1,6 +1,7 @@
 <script lang="ts">
 import { defineComponent, ref, onMounted } from 'vue';
 
+
 interface Contact {
   name: string;
   value: string;
@@ -62,7 +63,7 @@ export default defineComponent({
         <div class="work-title" >{{ aboutMe.profession }}</div>
       </div>
       <div class = "image-container">
-          <img class="profile" :src="aboutMe.profile" alt="profile picture">
+          <img class="profile" src="../assets/profile-web.png" alt="profile picture">
       </div>
       
       <div class = "contact-container">

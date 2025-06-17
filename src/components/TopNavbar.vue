@@ -52,7 +52,7 @@ export default defineComponent({
 <template>
   <nav class="navbar">
 
-        <img class="menu-profile" :src="aboutMe.profile" alt="profile image" />
+        <img class="menu-profile" src="../assets/profile-web.png" alt="profile image" />
     
         <router-link to="/" @click="toggleClass('introductionBatton')" :class="{ 'active': introductionBatton, 'menu-item': !introductionBatton }">
           <svg :class="{ 'activeIcons': introductionBatton, 'icons': !introductionBatton }" xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
@@ -252,7 +252,7 @@ export default defineComponent({
 
 .menu-profile {
   display:flex;
-  width: 85px;
+  
   height: 85px;
   border-radius: 10px;;
   margin-right: 10px;
@@ -262,7 +262,7 @@ export default defineComponent({
   @media screen and (max-width: 810px) {
 
   .menu-profile {
-    width: 60px;
+    
     height: 60px;
   }
   .tooltip{
@@ -289,7 +289,7 @@ export default defineComponent({
     padding: 2px 5px ;
   }
   .menu-profile{
-    width: 40px;
+    
     height: 40px;
   }
 
